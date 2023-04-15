@@ -10,7 +10,7 @@ selected_word = random.choice(word_list)
 #starting the game
 
 # number of try 
-number_of_guesses = 6
+number_of_guesses = 10
 guessed_letters = []
 print("_________________________")
 #loop the until the game won or lose
@@ -41,8 +41,8 @@ while number_of_guesses > 0:
     else:
         print("incorrect")
         guessed_letters.append(guess)
-        number_of_guesses = number_of_guesses-1
-        print(" ".join(["0" if i < number_of_guesses else "|" for i in range(6)]))
-        if number_of_guesses == 0:
+        guesses_left = number_of_guesses-1
+        print(" ".join(["0" if i < guesses_left else "|" for i in range(number_of_guesses)]))
+        if guesses_left == 0:
             print("you lose, the word was " + selected_word)
 print("______________________")
