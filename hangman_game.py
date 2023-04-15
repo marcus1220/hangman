@@ -1,12 +1,15 @@
 import random
 
 # word to chiose from the list
+# enter those word you want it in the random list
 word_list = ["generator", "brightless", "containing", "vocabulary", "welcome", "timeline", "selection", "workplace", "language", "important", "computer", "paragraphs", "longest", "expresses", "composed", "government", "synonyms", "enormous", "prognosticator", "messagem"]
 
 # picking random word from the list 
 selected_word = random.choice(word_list)
 
 #starting the game
+
+# number of try 
 number_of_guesses = 6
 guessed_letters = []
 print("_________________________")
