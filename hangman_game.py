@@ -26,7 +26,7 @@ while number_of_guesses > 0:
         print("you have already guess that letter")
         continue
     
-    #check the guess
+    #check the guess is it the right one
     if guess in selected_word:
         print("correct")
 
